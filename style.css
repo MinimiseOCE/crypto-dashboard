@@ -1,7 +1,7 @@
 :root {
     --background-color: #191414;
-    --primary-acent: #1DB954;
-    --secondary-acent: #FFFFFF;
+    --primary-accent: #1DB954;
+    --secondary-accent: #FFFFFF;
     --body-text: #B3B3B3;
 }
 
@@ -23,9 +23,9 @@ body {
     
     display: grid;
     
-    grid-template-columns: 1fr 5fr; 
+    grid-template-columns: minmax(350px, auto) 1fr;
     
-    grid-template-rows: 180px 1fr; 
+    grid-template-rows: minmax(120px, auto) 1fr; 
     
     grid-template-areas: 
         "sidebar header"
@@ -34,14 +34,14 @@ body {
 
 .header {
     grid-area: header;
-    background-color: var(--secondary-acent);
+    background-color: black;
 
 }
 
 .sidebar {
     grid-area: sidebar;
-    background-color: var(--primary-acent);
-    color: var(--secondary-acent);
+    background-color: var(--primary-accent);
+    color: var(--secondary-accent);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -54,7 +54,7 @@ body {
     overflow-y: auto; 
 }
 
-.sideIcons {
+.side-icons {
     height: 1.8rem;
     filter: invert(100%);
 }
