@@ -61,11 +61,71 @@ body {
         "btn-section"
 }
 
+
+.pfp-info > p {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+.header-pfp {
+    height: 2rem;
+}
+
+.big-pfp {
+    height: 4rem;
+}
+
+.header-pfp, .big-pfp {
+    border-radius: 100%;
+    transition: 0.15s;
+}
+
+.header-pfp:hover, .big-pfp:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(90%);
+}
+
+.header-icon {
+    height: 2rem;
+    filter: invert(100%);
+    border-radius: 100%;
+    padding: 4px;
+    transition: 0.15s;
+}
+
+.header-icon:hover {
+    background: var(--body-text);
+    filter: invert(0%);
+    cursor: pointer;
+}
+
 .search-section {
     grid-area: search-section;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.search-section > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 1000;
+}
+
+.search-bar {
+    width: 1000px;
+    height: 1.5rem;
+    border-radius: var(--border-curve);
+    border: none;
+    outline: none;
+    filter: brightness(90%);
+    transition: (0.3s);
+}
+
+.search-bar:hover {
+    filter: brightness(100%)
 }
 
 .btn-section {
@@ -74,6 +134,36 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+.btn-section > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.big-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.hdr-button {
+    border-radius: var(--border-curve);
+    background-color: var(--primary-accent);
+    color: var(--body-text);
+    border: none;
+    width: 100px;
+    height: 36px;
+    transition: 0.15s;
+}
+
+.hdr-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(90%);
+
+}
+
+/* Main Content Section */
 
 .main-content {
     grid-area: main-content;
