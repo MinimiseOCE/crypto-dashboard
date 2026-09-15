@@ -43,12 +43,36 @@ body {
     
 }
 
+/* Header Section */
+
 .header {
     grid-area: header;
     background-color: var(--background-color);
     margin: var(--border-gap);
     border-radius: var(--border-curve);
+    color: var(--body-text);
+    display: grid;
+    grid-template-rows: minmax(40px, auto) 1fr;
+    grid-template-columns: 1fr;
+    padding: clamp(1rem, 3vw, 2rem);
 
+    grid-template-areas:
+        "search-section"
+        "btn-section"
+}
+
+.search-section {
+    grid-area: search-section;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-section {
+    grid-area: btn-section;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-content {
@@ -59,7 +83,7 @@ body {
     border-radius: var(--border-curve);
 }
 
-/* Sidebar */
+/* Sidebar Section */
 
 .sidebar {
     grid-area: sidebar;
